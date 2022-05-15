@@ -1,0 +1,78 @@
+/* цвет текста основной #000000 */
+
+/* цвет текста rgba (0,0,0,0.8); */
+
+/* белый №ffffff */
+
+/* вторичный цвет фона #f5f5f5 */
+
+/* акцент #18A0FB */
+
+:root {
+    --primary-text-color: rgba(0,0,0,0.8);
+    --title-text-color: #000000;
+    --accent-color:#18A0FB;
+    --primary-bg-color: #ffffff;
+}
+
+body {
+    background-color: var(--primary-bg-color);
+    color: var(--primary-text-color);
+}
+.list{
+    list-style: none;
+}
+
+
+.logo {color: var(--title-text-color);}
+.logo:hover{color: var(--accent-color);}
+
+/* site nav */
+
+.site-nav .link{color: var(--accent-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus{color: var(--title-text-color);
+}
+
+.site-nav .link.current{
+    color: red;
+}
+
+/* Hero */
+.hero-title {color:var(--title-text-color);}
+
+/* sections */
+.section-title {color: var(--title-text-color);}
+
+/* features */
+.feature-list .title{
+    color:var(--title-text-color);
+}
+
+/* example */
+.work-list .title{
+    color: var(--title-text-color)
+}
+
+.button{
+    color: var(--title-text-color);
+    background-color: var(--primary-bg-color);
+    font-size: 24px;
+    padding: 12px 24px;
+    display: unline-block;
+    border: 1px solid black;
+}
+
+.button.primary{
+    color:var(--primary-bg-color);
+    background-color: var(--accent-color);
+    border-color: transparent;
+}
+
+.button.secondary{
+    color:var(--accent-color);
+    background-color:var(--primary-bg-color);
+    border-color: var(--accent-color);
+}
