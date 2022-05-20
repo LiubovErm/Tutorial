@@ -1,0 +1,106 @@
+:root {
+--main-font: 'Poppins', sans-serif;
+
+--main-light:#fff;
+--main-dark:#000000;
+
+--main-font-color:#8F95A5;
+--secondary-font-color:#263238;
+--accent-color:#939393;
+--barge-font-color:#546269;
+--font:#2A3246;
+
+--main-background-color:#E5E5E5;
+--bage-background-color: #eeeeee;
+--border-color:#C4C4C4;
+--background-items:#F5F5F5;
+}
+
+
+/* Global style*/
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family:'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--main-font-color);
+}
+.list {
+    list-style: none;
+}
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+.button {
+    color: inherit;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+.section-title {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 1.67;
+    color:var(--main-dark)
+}
+.section {
+    background-color: var(--main-light);
+}
+.header {
+    background-color: var(--main-light);
+}
+.header > .container {
+    display: flex;
+    justify-content: space-between;
+}
+.site-logo {
+    font-size: 36px;
+    line-height: 1.5;
+    color: var(--main-dark);
+    text-decoration:underline;
+}
+.site-logo-accent {
+    color: var(--accent-color)
+}
+.nav-item {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.5;
+    color: var(--secondary-font-color);
+}
+.header-btn {
+    font-size: 24px;
+    line-height: 1.5;
+    color: var(--main-dark);
+    background-color: var(--main-light);
+    border: 2px solid var(--secondary-font-color);
+    border-radius: 5px;
+    padding: 17px 57px;
+    
+}
+.site-title {
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 1.25;
+    color: var(--main-dark);
+}
+.hero-description {
+    font-size: 24px;
+    line-height: 1.5;
+    color: var(--main-font-color);
+}
+.hero-btn {
+    font-size: 36px;
+    line-height: 1.5;
+    border-radius: 15px;
+    background-color: var(--secondary-font-color);
+    color: var(--main-light);
+    padding: 32px 117px;
+}
+.nav-item + .nav-item {
+    margin-left: 40px;
+}
