@@ -15,7 +15,19 @@
 --border-color:#C4C4C4;
 --background-items:#F5F5F5;
 }
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
 
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 
 /* Global style*/
 html {
@@ -41,6 +53,7 @@ body {
     background: none;
     cursor: pointer;
 }
+/* common styles */
 .section-title {
     font-size: 48px;
     font-weight: 600;
@@ -50,21 +63,33 @@ body {
 .section {
     background-color: var(--main-light);
 }
+/* header styles */
 .header {
     background-color: var(--main-light);
+    padding-top: 58px;
+    padding-bottom: 46px;
 }
 .header > .container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .site-logo {
     font-size: 36px;
     line-height: 1.5;
     color: var(--main-dark);
-    text-decoration:underline;
+}
+.site-logo:hover,
+.site-logo:focus {
+   text-decoration: underline;
 }
 .site-logo-accent {
     color: var(--accent-color)
+}
+.nav-list {
+    margin: 0;
+    padding-left: 0;
+    display: flex;
 }
 .nav-item {
     font-weight: 500;
@@ -79,14 +104,20 @@ body {
     background-color: var(--main-light);
     border: 2px solid var(--secondary-font-color);
     border-radius: 5px;
-    padding: 17px 57px;
-    
+    padding: 17px 57px;  
 }
-.site-title {
+.container {
+    max-width: 1338px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-title {
     font-weight: 600;
     font-size: 64px;
     line-height: 1.25;
     color: var(--main-dark);
+    margin-top: 0;
 }
 .hero-description {
     font-size: 24px;
@@ -103,4 +134,26 @@ body {
 }
 .nav-item + .nav-item {
     margin-left: 40px;
+}
+.skills-item {
+    background-color: var(--background-items);
+    border-radius: 10px;
+}
+.skills-list-title {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 2.67;
+    color: var(--secondary-font-color);
+}
+.skills-list-text {
+    line-height: 1.5;
+}
+.skills-btn {
+    border-radius: 5px;
+    background-color: var(--secondary-font-color);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.5;
+    color: var(--main-light);
+    padding: 15px 51px;
 }
