@@ -18,14 +18,15 @@
 body {
     background-color: var(--primary-bg-color);
     color: var(--primary-text-color);
+
     font-family: Montserrat, sans-serif;
     letter-spacing: -0.015em;
     font-size: 18px;
     line-height: 1.67;
 }
-html {
+/* html {
     box-sizing: border-box;
-}
+} */
 .list{
     list-style: none;
     padding: 0;
@@ -35,6 +36,8 @@ html {
     margin-left: auto;
     margin-right: auto;
     width: 1440px;
+    padding-left: 20px;
+    padding-right: 20px;
     outline: 2px solid tomato;
  }
 
@@ -50,25 +53,53 @@ html {
 
 .logo:hover{color: var(--accent-color);}
 
-.page-header {
+/* .page-header {
     background-color: #ccc;
-}
+} */
 /* site nav */
 
+/* .site-nav .item:not(:last-child) {
+    margin-right: 40px;
+} */
+
 .site-nav .link{color: var(--accent-color);
+    display: block;
     font-weight: 500;
     font-size: 15px;
     line-height: 1.2;
     text-decoration: none;
+    padding-top: 21px;
+    padding-bottom: 21px;
 }
 
 .site-nav .link:hover,
 .site-nav .link:focus{color: var(--title-text-color);
 }
-
 .site-nav .link.current{
     color: red;
 }
+.main-nav {
+    display: flex;
+    align-items: center;
+}
+.site-nav {
+    display: flex;
+}
+.site-nav .item + .item {
+    margin-left: 40px;
+}
+.container > .site-nav {
+    margin-left: 70px;
+}
+.auth-nav {
+    display: flex;
+    margin-left: auto;
+}
+.auth-nav .item +.item {
+    margin-left: 12px;
+}
+
+
 
 /* Hero */
 .hero-title {color:var(--title-text-color);
@@ -96,6 +127,17 @@ html {
     margin-top: 0;
     margin-bottom: 80px;
 }
+.section-title.centered {
+    text-align: center;
+}
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.no-padding {
+    padding-top: 0;
+    padding-bottom: 0;
+}
 
 /* features */
 .feature-list .title,
@@ -112,9 +154,14 @@ html {
     margin-bottom: 32px;
 }
 
-
 /* example */
-
+.work-list > .item {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.work-list > .item:nth-child(2n) {
+    background-color:var(--secondary-bg-color);
+}
 
 /* button */
 .button{
@@ -134,32 +181,29 @@ html {
     text-align: center;
     box-sizing: border-box;
 }
-
 .button.primary{
     color:var(--primary-bg-color);
     background-color: var(--accent-color);
 }
-
 .button.secondary{
     color:var(--accent-color);
     background-color:var(--primary-bg-color);
     border-color: var(--accent-color);
 }
-.section-title.centered {
-    text-align: center;
-}
-.section {
-    padding-top: 120px;
-    padding-bottom: 120px;
-}
-.no-padding {
-    padding-top: 0;
-    padding-bottom: 0;
-}
-.work-list > .item {
-    padding-top: 80px;
-    padding-bottom: 80px;
-}
-.work-list > .item:nth-child(2n) {
-    background-color:var(--secondary-bg-color);
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
